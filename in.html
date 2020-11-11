@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 16</title>
+</head>
+<body>
+	<form>
+		<div class="form_element">
+			<label>
+				Nombre
+			</label>
+			<input type="text" placeholder="nombre" name="nombre" onkeypress="return onlyLetters(event,this)">
+		</div>
+		<div class="form_element">
+			<label>
+				Fecha nacimiento
+			</label>
+			<input type="text" placeholder="090390" name="date">
+		</div>
+
+	</form>
+<script type="text/javascript">
+	
+	console.log("Ingrese su nombre");
+	function onlyLetters(e, target){
+		if (e.keyCode>=65 && e.keyCode<=90 || e.keyCode>=97 && e.keyCode<=122) {
+			return true;
+		}else{
+			return false
+		}
+	}
+
+</script>
+</body>
+</html>
